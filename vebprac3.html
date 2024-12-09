@@ -1,0 +1,147 @@
+
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Өнімдер</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 15px;
+            text-align: center;
+            opacity: 0.7;
+        }
+        .card:hover {
+            opacity: 1;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .card p {
+            font-size: 14px;
+            color: #777;
+        }
+        .card .price {
+            font-weight: bold;
+            color: #e67e22;
+        }
+        .card button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card button:hover {
+            background-color: #2980b9;
+        }
+        @media (max-width: 768px) {
+    .product {
+        width: 100%; /* Один блок на строку */
+    }
+    .product button {
+        font-size: 0.9em; /* Меньший текст */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5em; /* Уменьшение размера заголовка */
+        padding: 20px;
+    }
+    nav a {
+        padding: 10px 15px;
+        font-size: 0.9em; /* Меньший размер текста в навигации */
+    }
+}
+    </style>
+</head>
+   
+<body style="background-image: url('data:image/jpeg;base64,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'); background-size:cover;">
+
+    <h1>Біздің тауарлар</h1>
+    <div class="container">
+        <div class="card">
+            <img src="data:image/jpeg;base64,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" alt="Тауар 1">
+            <h3>Худи</h3>
+            <p></p>
+            <p class="price">15000₸</p>
+            <button>Сатып алу</button>
+        </div>
+        <div class="card">
+            <img src="data:image/jpeg;base64,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" alt="Тауар 2">
+            <h3>Толстовка</h3>
+            <p></p>
+            <p class="price">12000₸</p>
+            <button>Сатып алу</button>
+        </div>
+        <div class="card">
+            <img src="data:image/jpeg;base64,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" alt="Тауар 3">
+            <h3>Свитшот</h3>
+            <p></p>
+            <p class="price">18000₸</p>
+            <button>Сатып алу</button>
+            </div>
+               <div class="card">
+            <img src="https://qazaqrepublic.com/uploads/thumbs/sweatshirt-republic-orange-9219661ea3-f3e27ef6c01dd69d4ef5098a35ee6ed4.jpeg" alt="Тауар 3">
+            <h3>Толстовка</h3>
+            <p></p>
+            <p class="price">12000₸</p>
+            <button>Сатып алу</button>
+            </div>
+        <div class="card">
+            <img src="https://qazaqrepublic.com/uploads/thumbs/sweatshirtqrllight-blue-2ab9c236cc-5576fda4add9243e518045bdbca5502b.jpeg" alt="Тауар 3">
+            <h3>Худи</h3>
+            <p></p>
+            <p class="price">30000₸</p>
+            <button>Сатып алу</button>
+            </div>
+        <div class="card">
+            <img src="https://qazaqrepublic.com/uploads/thumbs/fw23-web-makets-overfit-sw-socie-30f7d7d0de-916afbadd7b9655cd50573183c9ea52c.jpeg" alt="Тауар 3">
+            <h3>Зипка</h3>
+            <p></p>
+            <p class="price">23000₸</p>
+            <button>Сатып алу</button>
+            </div>
+        <div class="card">
+            <img src="https://qazaqrepublic.com/uploads/thumbs/half-zipperqrblue-8886e3e515-f606c14c5fd2584488443cbf84f422c2.jpeg" alt="Тауар 3">
+            <h3>Полу замок</h3>
+            <p></p>
+            <p class="price">34500₸</p>
+            <button>Сатып алу</button>
+            </div>
+        <div class="card">
+            <img src="https://qazaqrepublic.com/uploads/thumbs/sweatshirt-blue-2-780d156565-16d6e9adb0a2068314106e9e24635830.jpeg" alt="Тауар 3">
+            <h3>Куртка</h3>
+            <p></p>
+            <p class="price">16900₸</p>
+            <button>Сатып алу</button>
+            </div>
+        <a href="file:///C:/Users/Lenovo/Documents/vebprac5.html" class="back-link">Басты бетке қайту</a>
+    </div>
+</body>
+</html>

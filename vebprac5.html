@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макет2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0.5;
+        }
+        .container:hover {
+            opacity: 1;
+        }
+        .header {
+            background-color: #fad0c4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+            width: 100%;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            padding: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .box {
+            background-color: #8ec5fc;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+            box-sizing: border-box;
+        }
+        .box-3 {
+            background-color: #c2f9ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .button {
+            padding: 10px;
+            background-color: #7b1fa2;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+        .text-area {
+            width: 80%;
+            background-color: #7b1fa2;
+            padding: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .text {
+            text-align: justify;
+            color: #4b0082;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .box {
+                min-width: 100%; /* Ensure boxes stack on smaller screens */
+                margin-bottom: 20px;
+            }
+            .button {
+                font-size: 1em;
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                font-size: 1.5em;
+                padding: 15px;
+            }
+            .box {
+                min-width: 100%;
+            }
+            .buttons {
+                flex-direction: column;
+            }
+            .button {
+                font-size: 0.9em;
+                padding: 10px;
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            QAZAQ REPUBLIC
+        </div>
+        <div class="content">
+            <div class="box">
+                <h3>Отанды сүю киімнен де басталады</h3>
+                <p>
+                    «Qazaq Republic» жобасы 2017 жылы Алматыда қолға алынған болатын. «Bari jaqsy bolady», «Born qazaq», яғни «Қазақ болып туылдым», «Qazaq Republic, 1465» немесе «QREP» (Қазақ хандығының құрылған жылы) деген жазулары бар киім үлгілері көпшілікке бірден ұнап, көптеп сатыла бастайды. Жоба авторы, режиссер Сәкен Жолдас бұл іске бастапқыда 10 мың долларға жуық қаржы құйыпты. Қазір ел бойынша 30 мыңға жуық сату нүктесі бар. Осы уақыт ішінде сатылым 20 есеге өскен.
+                </p>
+            </div>
+            <div class="box">
+                <h3>«Qazaq Republic»</h3>
+                <p>
+                    «Qazaq Republic» – мен үшін еліміздің атауы және жүрекке жақын бренд. Бұл киімдердің сапасы жоғары, дизайны ерекше әрі кигенге ыңғайлы болғандықтан сатып алдым. Осы арқылы әр адам өз еліне деген махаббатын көрсетеді деп ойлаймын. Аталмыш брендті кигенде қуаныш сезімінде болдым, оның үстіне өзімнің тапқан ақшама алынған еді, – дейді Қазақстан-Американдық еркін университетінің студенті Нәзира.
+                </p>
+            </div>
+            <div class="box box-3">
+                <div class="buttons">
+                    <a href="file:///C:/Users/Lenovo/Documents/vebprac3.html"> <button class="button">Өнімдер</button> </a>
+                    <a href="file:///C:/Users/Lenovo/Documents/vebprac2.html"><button class="button">Байланыс</button> </a>
+                    <a href="file:///C:/Users/Lenovo/Documents/vebprac3.html"><button class="button">Өнімдер</button> </a>
+                    <a href="file:///C:/Users/Lenovo/Documents/vebprac.html"><button class="button">Дүкен</button> </a>
+                </div>
+                <a href="file:///C:/Users/Lenovo/Documents/vebprac.html"> <button class="button">Қысқаша</button> </a>
+                <div class="text">
+                    <p>
+                        Бренд қазақи нақышта және сапалы болғандықтан жастарымызды баурап алып жатыр. Менің ойымша, тарихымыз бен патриоттық сезімді айғақтайтын әрі әдемі киім үлгілері көбейсе, ол санамызға да әсер етіп, ұлт ретінде ұйыса түсеріміз анық.
+                    </p>
+                    <p>
+                        Qazaq Republic – 2017 жылы құрылған, Қазақстанның жетекші киім брендтерінің бірі. Бренд күнделікті киюге ыңғайлы және сапалы киім жасаумен айналысады.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
